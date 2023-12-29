@@ -1,0 +1,124 @@
+@import "../../colors.scss";
+
+.about-page {
+    min-height: 90vh;
+
+    .content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding-top: 2rem;
+
+        .left,
+        .right {
+            flex-basis: 50%;
+        }
+
+        .left {
+
+            display: grid;
+            place-items: center;
+
+            .img-con {
+                display: grid;
+                place-items: center;
+                background-color: $voilet;
+                border-radius: 100%;
+                border: 10px solid $voilet;
+            }
+
+            img {
+                margin: 30px;
+                width: 200px;
+                height: 200px;
+                border: 10px solid $voilet;
+                border-radius: 100%;
+                outline: 30px solid $white;
+            }
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            gap: .8rem;
+
+            h1 {
+                font-size: 2.5rem;
+                font-weight: 500;
+            }
+
+            p {
+                font-size: 1.3rem;
+            }
+
+            small {
+                font-size: 1rem;
+                line-height: 20px;
+
+                span {
+                    color: $voilet;
+                    font-weight: 500;
+                }
+            }
+
+            a {
+                margin-top: 2rem;
+                background-color: $voilet;
+                color: $white;
+                display: inline-block;
+                width: 150px;
+                padding: 10px 20px;
+                border-radius: 5px;
+                font-weight: 500;
+
+                &:hover {
+                    opacity: .8;
+                    transition: .3s linear;
+                }
+            }
+
+            .skills {
+                margin-top: 1rem;
+                font-weight: 500;
+
+
+            }
+
+            .skills-logo {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1rem;
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                    object-fit: contain;
+                    filter: drop-shadow(rgba(0, 0, 0, 0.24) 0px 3px 8px);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:800px){
+    .about-page{
+
+        .content{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            .left,.right{
+                flex-basis: 100%;
+            }
+
+            .right{
+
+                .skills-logo{
+                    justify-content: center;
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,115 @@
+.services {
+    padding: 3rem 5% 5rem;
+}
+
+.service-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10%;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+
+    .service-card {
+        background-color: white;
+        box-shadow: #6739f15e 0px 2px 5px !important;
+        padding: 3rem 2rem;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        max-width: 300px;
+        width: 100%;
+        margin: 1rem;
+
+        svg {
+            color: #6739f1;
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-weight: 500;
+        }
+
+        p {
+            color: #707370;
+            font-weight: 500;
+            font-size: .9rem;
+        }
+
+        button {
+            background-color: #6739f1;
+            color: white;
+            padding: 10px 25px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            transition: all .2s;
+
+            &:hover {
+                opacity: .8;
+            }
+        }
+
+    }
+}
+
+.service-show-box {
+    position: fixed;
+    inset: 0;
+    background-color: #ada0d6db;
+    z-index: 10000;
+    display: grid;
+    place-items: center;
+    visibility: hidden;
+
+    .box {
+        position: relative;
+        background-color: white;
+        padding: 1.5rem;
+        max-width: 450px;
+        width: 100%;
+
+
+
+        .cross {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            font-size: 1.5rem;
+            color: #6739f1;
+            transition: .2s linear;
+            cursor: pointer;
+
+            &:hover {
+                transform: rotate(90deg);
+            }
+        }
+
+        h3 {
+            font-weight: 500;
+            font-size: 1.5rem;
+            padding-block: 1rem;
+        }
+
+        .description {
+
+            ul {
+                padding-left: 10%;
+
+                li {
+                    margin-bottom: 1rem;
+                    color: #707370;
+                    font-size: .9rem;
+                }
+            }
+
+            li::marker {
+                color: #6739f1;
+                font-size: 1.3rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,72 @@
+@import "../../colors.scss";
+
+.contact-us {
+
+    .form-container {
+        display: grid;
+        place-items: center;
+
+        form {
+            width: 90%;
+            max-width: 500px;
+            padding-top: 2rem;
+
+            button{
+                background-color: $voilet;
+                color: white;
+                width: 100%;
+                display: inline-block;
+                padding: 10px;
+                border: none;
+                outline: none;
+                font-size: 1.2rem;
+                font-weight: 500;
+                transition: .2s linear;
+                cursor: pointer;
+
+                &:hover{
+                    opacity: .8;
+                }
+            }
+
+            div {
+
+                position: relative;
+                border: 2px solid $gray;
+                // border-radius: 10px;
+                margin-bottom: 20px;
+
+                label {
+                    display: inline-block;
+                    padding: .5rem 1rem 0;
+                    position: absolute;
+                    font-weight: 500;
+                    top: -15px;
+                    left: 10px;
+                    background-color: white;
+                    font-size: .8rem;
+                }
+
+                input {
+                    padding: 10px;
+                    font-size: 1rem;
+                    margin-top: 10px;
+
+                }
+
+                textarea {
+                    padding: 10px;
+                    font-size: 1rem;
+                    width: 100%;
+                }
+
+                input,
+                textarea {
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                }
+            }
+        }
+    }
+}

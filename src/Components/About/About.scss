@@ -1,0 +1,43 @@
+@import "../../colors.scss";
+
+
+.slide{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+
+
+    img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: auto;
+    }
+}
+
+.slick-slider{
+    border-inline: 4px solid $voilet;
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 600px;
+}
+
+@media (max-width:550px){
+    .about{
+        margin-top: 5rem;
+    }
+    .slick-slider{
+        border-inline: 4px solid $voilet;
+        margin: 2rem auto;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .slide small{
+        width: 70% !important;
+        display: inline-block;
+    }
+}

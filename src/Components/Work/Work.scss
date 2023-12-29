@@ -1,0 +1,52 @@
+.work{
+
+    .project-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10%;
+        place-items: center;
+        margin-block: 2rem;
+
+        .img-con{
+            overflow: hidden;
+        }
+
+        img{
+            filter: grayscale(50%);
+            transition: .3s linear;
+
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+
+        h2{
+            font-weight: 500;
+            margin: .5rem 0;
+        }
+
+        p{
+            font-weight: 400;
+            color: #707370;
+
+        }
+    }
+}
+
+@media (max-width:950px){
+    .work{
+        .project-container{
+            grid-template-columns: repeat(2,1fr);
+            gap: 3%;
+        }
+    }
+}
+
+@media (max-width:550px){
+    .work{
+        .project-container{
+            grid-template-columns: repeat(1,1fr);
+            gap: 1%;
+        }
+    }
+}

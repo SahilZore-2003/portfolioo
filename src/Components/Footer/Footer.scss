@@ -1,0 +1,59 @@
+@import "../../colors.scss";
+
+.footer{
+    background-color: $voilet;
+    color: $white;
+    padding: 2rem 6%;
+
+    .footer-top{
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+
+        .footer-links{
+            display: flex;
+            align-items: center;
+            gap: 1.8rem;
+            flex: 1;
+            justify-content: center;
+        }
+
+        .footer-icons{
+            display: flex;
+            gap: 1rem;
+            font-size: 1.7rem;
+
+            svg:hover{
+                transition: .2s linear;
+                color: $black;
+            }
+        }
+
+        a{
+            color: white;
+        }
+    }
+
+    .copyright{
+        p{
+            font-weight: 500;
+            font-size: .8rem;
+        }
+    }
+}
+
+@media (max-width:700px){
+    .footer{
+        .footer-top{
+            flex-direction: column;
+            gap: 2rem;
+
+            .footer-links{
+                text-align: center;
+            }
+        }
+    }
+}
